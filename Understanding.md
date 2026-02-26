@@ -109,4 +109,22 @@ To is case me--reposse hai na ek hi baar string format me --match hota hai to te
 file create thase--git commit k andar hote hai-snapshot ko 
 with flag --node-test-snapshot file banse, ena vagar nai bane 
 
+node --test --test-update-snapshots--naye snapshot banaye
+node --test---us banaye huye snapshot pe test kariye 
+
+jest--assert etle expect 
 REFER NODE JS TEST DOCUMENTATION
+
+Integration testing--multiple components
+End-to-end--sypress,playright, browser ko open test karke test karna hota hai
+
+
+RATIO ko samje k --kitni uunit, integration, end-to-end testing honi chahiye
+THree leevels hoti hai
+1. unit test--around 70%--fast 
+2. Integration--around 30%-comparatively slow
+3. End -to-End --imp flows-around 10%/20%--very slow
+
+slow hase to resoucrs vadhare hova joiye--ane enathi badhu vadhi jaay
+
+TDD--pela badha test and unn test cases ko pass karne k liye TDD
