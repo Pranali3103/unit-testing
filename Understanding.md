@@ -46,3 +46,53 @@ ab isse help hinga k ke aise nai work karenga--ye problem kar raha hai--usko soc
 
 Suite meaning
 --ek jeva meaning na function ne jode rakhi sakay--grouping kar pate hai, output ache se dekh pate hai 
+
+
+Mocking
+Ek method hai jo dusri method call kar rahi hai, side effect hongi, third party api hoti hai--to isoltaion k andar karne k liye-- iska fake ya mock version/data banate hai--jo andar wali function return karti hai --mock ni andar koi bhi 3rd party api call nai thay --moking hum karte kyunki --bcz we want isolation--isolutaion k andar run karne k liye--side effects se rokna hota hai--expected data bhej hai aur side effect wala kaam nai karte
+
+UNIT TEst==ISOLATION==Mocking
+
+
+assert ma comparison mate j object joiye ene deepStrictEqual joiye --field same che k nai ae jovanu hoy ne object ma checking.
+
+callcount==khbr padese k actual function call ketli thay thai, ae jovu padene 
+
+kitni baar call ki hai--spy karte hai--uska ek array milta hai
+
+mockedProcessPayment.make.call[0]--pehla call 
+
+ab ye bhi check karna hai jo function --data.argument--100 argument thi, kabhi kabhi hum argument check karta hai 
+
+
+original wali function call nai honi,varna api call homgi==I am original and I am mocked
+
+mock call hi nai ho raha hai--funtion direct call kariye chiye to --process order 
+
+NOw comes Dependency Injection---kisi func k andar jo bhi depednecy hai--process payment depednecy hai--to add unit test karna imposiible hota hai--jo bhi depdency --jo bhi dependeceinces use ho rahi hai wo directly use na kare ya call na kare --usko receive kare as depedncy as parameter
+--3rd party api calls---SIDE EFFECT 
+To ena mate andar na function nu fake version banavu pade--MOCK version --same data return hum return karte hai--koi bhi ek mock data--mock wale k andar koi api call nai krenege 
+function ne isoltaion ma run karvu che-->possible side effect ne rokvu padse--> aur function ne side effect thi rockvu hoy to enu mocked version banavanu hoy--expected data return karte hai 
+dependies. karine thase ae paramter k through inject karenge 
+and class hoy to constructor k through pass karenge 
+
+
+I am original aaya hua hai
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  0 !== 1--mock call hi nai ho raha hai
+
+  So wwe need DEPENDENCY INJECTION--ye function dependency hai--processPayment dependency hai --directly use nathi karvanu--recive as paramtere
+ISOLATION_MOCKING_DEPENDENCYINJECTION
+
+
+kitne baar call hui hai--1 k jagah 2 karenege 
+
+
+STUBS:::
+stub sirf, function kitni baar, konse argument k sath return hota hai.
+stuff is dumb ye ek ready made data--wohi data karenga 
+
+
+SNAPSHOT TESTING
+
