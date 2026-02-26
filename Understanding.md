@@ -93,6 +93,20 @@ STUBS:::
 stub sirf, function kitni baar, konse argument k sath return hota hai.
 stuff is dumb ye ek ready made data--wohi data karenga 
 
+MOCK and stubb ma diff
+mock-ketli vaar function call thay che, arguments pass thay che k nai, 
+stubb-only data return karta hai-ready made 
+
 
 SNAPSHOT TESTING
+data bada ho sakta hai--iss case me iss type k responses k liye snapshot testing is used
 
+TEST==IT TEST  ka alias hai IT
+
+since harek field k liye assert dalna padega--resposen bau bada hai to assert bada ho jata hai-complicated
+
+To is case me--reposse hai na ek hi baar string format me --match hota hai to test pass hota hai
+file create thase--git commit k andar hote hai-snapshot ko 
+with flag --node-test-snapshot file banse, ena vagar nai bane 
+
+REFER NODE JS TEST DOCUMENTATION

@@ -1,0 +1,7 @@
+exports[`SnapshotTesting > test that it fetches data correctly 1`] = `
+{
+  "id": 123,
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
+`;
